@@ -1,0 +1,31 @@
+.subscribe {
+    margin-left: 93px;
+}
+
+.subscribe__call {
+    display: block;
+    color: var(--background-header);
+    line-height: 1.14;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;        
+}
+
+.subscribe__field {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: var(--background-footer);
+    padding: 15px 16px;
+    color: var(--footer-contacts);
+    outline: transparent;
+    transition-duration: 250ms;
+    transition-timing-function: var(--сubic);
+
+
+    &:hover,
+    &:focus {
+    border-color: var(--button-link-color);
+    }
+}

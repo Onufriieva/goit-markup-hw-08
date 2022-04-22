@@ -1,0 +1,145 @@
+.nav {
+    
+    @media screen and(min-width: 768px){
+        display: flex;
+       align-items: center;   
+    }
+
+    @media  screen and(min-width: 480px) and(max-width: 767px) {
+       display: flex;
+       justify-content: space-between;
+    }
+}
+
+.logo__nav {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;   
+
+    @media screen and(max-width: 767px) {
+     padding-top: 16px;
+     padding-bottom: 16px;
+        margin-right: 0;
+    }
+   }
+   
+.studio__nav {
+    color: var(--title-font);
+}
+
+.nav__btn {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+    border: none;   
+    background-color: transparent;
+  
+
+    &.is-open .nav-icon__close {
+        display: block;
+    }
+
+    & .nav-icon__close {
+        display: none;
+    }
+
+
+    & .nav-icon__open {
+        display: block;
+    }
+
+    &.is-open .nav-icon__open {
+        display: none;
+    }
+
+    
+
+    &:hover .nav-icon__open,
+    &:focus .nav-icon__open {
+        fill: var(--button-link-color);
+    }
+    
+  
+  
+    
+
+   @media screen and(min-width: 768px) {
+       display: none;
+   }  
+
+}
+
+
+.nav__icon {
+    position: absolute;
+    fill: var(--title-font);
+    top: 0;
+    left: 0;
+
+  margin: 10px 8px;    
+}
+
+.nav-icon__open {
+width: 24px;
+height: 16px;
+}
+
+.nav-icon__close {
+    width: 18px;
+    height: 18px;
+}
+
+.container__menu {
+    width: 480px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 48px;
+    background-color: var(--background-header);
+    background-color: yellow;
+}
+
+
+
+
+.nav__list {
+    @media screen and(min-width: 768px){
+    display: flex;
+    padding: 0;
+    margin: 0;
+    }
+  }
+
+.nav__item {
+    padding: 0;
+    margin-right: 50px;
+   
+}
+
+.nav-list .nav-list-item:last-child {
+    margin-right: 0;
+}
+
+
+.nav__link {
+    display: block;
+    padding: 32px 0;
+  
+    color: var(--title-font);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--сubic);
+
+
+&:hover,
+&:focus {
+    color: var(--button-link-color);
+ }
+}
+
