@@ -1,7 +1,7 @@
 .submit {
     position: relative;
-    left: 358px;
-    bottom: 50px;
+    // left: 358px;
+    // bottom: 50px;
 
     min-width: 200px;
     padding: 10px 62px 10px 29px;
@@ -14,6 +14,16 @@
     background-color: var(--button-link-color);
     color: var(--background-header);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    @media screen and(max-width: 480px) {
+  margin: 0;
+
+      }
+
+      @media screen and(min-width: 768px){
+     left: 358px;
+     bottom: 50px;
+     }
     
 
     &:hover,

@@ -1,9 +1,10 @@
 .subscribe {
     margin-left: 93px;
 
-    @media screen and(max-width: 479px) {
+    @media screen and(max-width: 480px) {
         margin-left: 0;
         text-align: center;
+       
           }
 }
 
@@ -27,6 +28,12 @@
     outline: transparent;
     transition-duration: 250ms;
     transition-timing-function: var(--сubic);
+
+    @media screen and(max-width: 480px) {
+        position: relative;
+      }
+
+  
 
 
     &:hover,

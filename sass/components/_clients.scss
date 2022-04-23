@@ -35,7 +35,7 @@
     margin-top: 0;
     margin-bottom: 0;    
     
-    @media screen and(max-width: 479px) {
+    @media screen and(max-width: 480px) {
         flex-wrap: wrap;      
       }
 }
@@ -47,7 +47,7 @@
     border-color: var(--icons-color);
     border-radius: 4px;   
     
-    @media screen and(max-width: 479px) {
+    @media screen and(max-width: 480px) {
         margin-bottom: 30px;
         width: 208px;
 
