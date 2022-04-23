@@ -1,8 +1,14 @@
 .services { 
+    display: none;
+
     padding-top: 0px;
     padding-bottom: 94px;
     margin: 0 auto;
     text-align: center;   
+
+    @media screen and(min-width: 768px){
+    display: block;
+     }
 }
 
 .services__title {   

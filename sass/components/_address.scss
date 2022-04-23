@@ -1,10 +1,14 @@
 .container__address {
     display: block;
+
+    @media screen and(max-width: 479px) {
+     text-align: center;
+      }
 }
 
 .logo__address {
  display: inline-block;
- width: 145px;  
+//  width: 145px;  
  padding: 0;
  margin-bottom: 20px;
 }   

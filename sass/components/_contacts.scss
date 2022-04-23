@@ -7,11 +7,21 @@
     margin-bottom: 0;   
     align-items: center;
     justify-content: center;
+ }
+
+//  @media screen and(max-width: 767px) {
+//      display: none;
+//  }
 }
-    }
 
 .contacts__item {
-    margin-right: 50px;     
+    margin-right: 50px;   
+    
+    @media screen and(max-width: 767px) {
+        margin-bottom: 32px;
+        margin-right: 0;
+
+    }
 }
 
 .contacts .contacts-item:last-child {
@@ -34,12 +44,12 @@
     }
 
     @media screen and(max-width: 767px){
-        font-size: 34px;
+        font-size: 24px;
         font-weight: 500;
         line-height: 1.17;
         letter-spacing: 0.02em;
-        color: var(--button-link-color);
-       
+        color: var(--main-font-color);
+     
     } 
     
 
@@ -58,10 +68,11 @@
     }
 
     @media screen and(max-width: 767px){   
-    font-size: 24px;
+    font-size: 34px;
     font-weight: 500;
     line-height: 1.17px;
     letter-spacing: 0.02em;
+    color: var(--button-link-color);
     }
 
     color: var(--main-font-color);

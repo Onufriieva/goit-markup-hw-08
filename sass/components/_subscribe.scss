@@ -1,5 +1,10 @@
 .subscribe {
     margin-left: 93px;
+
+    @media screen and(max-width: 479px) {
+        margin-left: 0;
+        text-align: center;
+          }
 }
 
 .subscribe__call {
