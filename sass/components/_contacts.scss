@@ -1,17 +1,20 @@
 .contacts {
-    @media screen and(min-width: 768px){
+
+    @media screen and(min-width: 768px) and(max-width: 1199px) {
+    display: block;
+    margin-left: auto;
+    }
+
+    @media screen and(min-width: 1200px) {
     display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0;
     margin-left: auto;
     margin-top: 0;
     margin-bottom: 0;   
-    align-items: center;
-    justify-content: center;
- }
 
-//  @media screen and(max-width: 767px) {
-//      display: none;
-//  }
+ }
 }
 
 .contacts__item {
@@ -20,7 +23,11 @@
     @media screen and(max-width: 767px) {
         margin-bottom: 32px;
         margin-right: 0;
+    }
 
+    @media screen and(min-width: 768px) and(max-width: 1199px) {
+        margin-right: 0;   
+        margin-bottom: 10px;
     }
 }
 
@@ -47,10 +54,15 @@
         font-size: 24px;
         font-weight: 500;
         line-height: 1.17;
-        letter-spacing: 0.02em;
         color: var(--main-font-color);
      
     } 
+
+    @media screen and(min-width: 768px) and(max-width: 1199px) {
+        font-size: 12px;
+        line-height: 1.17;
+        text-align: left;        
+    }
     
 
 &:hover,
@@ -62,27 +74,35 @@
 
 
 .contacts__tel {
-    @media screen and(min-width: 768px){
-    display: flex;
-    align-items: center;
-    }
-
-    @media screen and(max-width: 767px){   
-    font-size: 34px;
-    font-weight: 500;
-    line-height: 1.17px;
-    letter-spacing: 0.02em;
-    color: var(--button-link-color);
-    }
-
     color: var(--main-font-color);
     letter-spacing: 0.02em;
     text-decoration: none;
-    height: 16px;
-    
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+     
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--сubic);
+   
+
+    @media screen and(max-width: 767px){   
+    font-size: 34px;
+    line-height: 1.17;
+    color: var(--button-link-color);
+    }
+  
+
+    @media screen and(min-width: 768px) and(max-width: 1199px) {
+    display: flex;
+    align-items: center;    
+    font-size: 12px;
+    }
+
+    @media screen and(min-width: 1199px){
+       
+    }
 
 
 &:hover,

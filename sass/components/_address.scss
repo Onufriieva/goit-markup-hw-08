@@ -1,9 +1,11 @@
 .container__address {
-    display: block;
+  display: block;
 
-    @media screen and(max-width: 480px) {
-     text-align: center;
-      }
+  @media screen and(max-width: 767px) {
+    text-align: center;
+  }
+
+
 }
 
 .logo__address {
@@ -31,7 +33,7 @@ color: var(--background-header);
  margin-block-end: 0;
 
  
- @media screen and(max-width: 480px) {
+ @media screen and(max-width: 767px) {
 margin-bottom: 8px;
   }
 } 
@@ -47,7 +49,7 @@ margin-bottom: 8px;
     margin-top: 0;
     margin-bottom: 9px;
 
-    @media screen and(max-width: 480px) {
+    @media screen and(max-width: 767px) {
         margin-bottom: 8px;
           }
      

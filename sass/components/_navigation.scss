@@ -13,15 +13,14 @@
         margin-left: auto;
         margin-right: auto;
         position: relative;   
-        max-width: 480px;
- 
-     }
+        max-width: 480px; 
+    }
 
          
     @media screen and(min-width: 768px){
         align-items: center;        
         max-width: 1200px;
-     }
+    }
 }
 
 .logo__nav {
@@ -67,10 +66,9 @@
     } 
     
 
-   @media screen and(min-width: 768px) {
+   @media screen and(min-width: 767px) {
        display: none;
    }  
-
 }
 
 .nav__btn.is-open .nav-icon__close {
@@ -117,9 +115,9 @@ height: 16px;
   
     
 
-    @media  screen and(min-width: 768px) {
+    @media screen and(min-width: 481px) and(max-width: 768px) {
         display: none;
-    }
+    }  
 }
 
 .mobile {
@@ -153,17 +151,23 @@ text-decoration: none;
 }
 
 
-
 .nav__list {
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    // @media screen and(min-width: 480px) and(max-width: 767px) {
+    //     display: flex;
+    //     padding: 0;
+    //     margin: 0;
+    // }
+
     @media screen and(min-width: 768px){
     display: flex;
     padding: 0;
     margin: 0;
-    }
-
-    // @media screen and (max-width: 767px) {
-    //     display: none;
-    // }
+    }   
   }
 
 
@@ -171,8 +175,7 @@ text-decoration: none;
     padding: 0;
     margin-right: 50px;
    
-    @media screen and(max-width: 767px) {
-  
+    @media screen and(max-width: 767px) {  
      font-size: 40px;
      font-weight: 500;
      line-height: 1.18;
@@ -184,9 +187,8 @@ text-decoration: none;
      &:last-child {
          margin-bottom: 306px;
          margin-top: 0;
-     }
-
-    }
+  }
+ }
 }
 
 .nav-list .nav-list-item:last-child {
