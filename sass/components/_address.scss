@@ -8,7 +8,6 @@
 
 .logo__address {
  display: inline-block;
-//  width: 145px;  
  padding: 0;
  margin-bottom: 20px;
 }   
@@ -24,10 +23,17 @@ color: var(--background-header);
 
 .address__direction {
  display: inline-block;
- width: 231px;
- height: 21px;
+//  width: 231px;
+//  height: 21px;
  margin-top: 0;
  margin-bottom: 9px;
+ margin-block-start: 0;
+ margin-block-end: 0;
+
+ 
+ @media screen and(max-width: 480px) {
+margin-bottom: 8px;
+  }
 } 
 
 .address__list {
@@ -40,6 +46,14 @@ color: var(--background-header);
 .address__item {
     margin-top: 0;
     margin-bottom: 9px;
+
+    @media screen and(max-width: 480px) {
+        margin-bottom: 8px;
+          }
+     
+          &:last-child {
+margin-bottom: 0;
+          }
 }
 
  .address__item:last-child {
@@ -50,8 +64,8 @@ color: var(--background-header);
 .address__contact {
  display: block;
  padding: 0;
- width: 231px;
- height: 21px;       
+//  width: 231px;
+//  height: 21px;       
      
  text-decoration: none;
  color: var(--footer-contacts);

@@ -7,10 +7,24 @@
     list-style: none;
     padding: 0;
     padding-inline-start: 0; 
+
+    @media screen and(max-width: 480px) {
+     flex-wrap: wrap;
+     justify-content: flex-start;
+     margin-bottom: 40px;  
+    }
 }
 
 .filters__item {
     margin-right: 8px;    
+
+    @media screen and(max-width: 480px) {
+    margin-bottom: 15px;
+
+    &:nth-last-child(-n+2){
+        margin-bottom: 0;    
+    }
+ }
 }
 
 .filters__list .filters__item:last-child {
