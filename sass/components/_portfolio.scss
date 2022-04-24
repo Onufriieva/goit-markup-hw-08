@@ -3,7 +3,7 @@
     padding-top: 94px;
     padding-bottom: 94px;
 
-    @media screen and(max-width: 479px) {
+    @media screen and(max-width: 480px) {
         padding-top: 60px;
         padding-bottom: 60px;
  }
@@ -25,19 +25,31 @@
    @media screen and(max-width: 480px) {
     min-width: 450px;
     margin-right: 0;
+    margin-bottom: 30px; 
+
+    .portfolio__item:nth-last-child(-n+3){
+        margin-bottom: 30px;    
+    }
+   }
 } 
 
  &:hover .thumb__description {
     transform: translateY(0);
  }
-}
+
 
 .portfolio__item:nth-child(3n) {
    margin-right: 0;
 }
 
 .portfolio__item:nth-last-child(-n+3){
-    margin-bottom: 0;    
+    margin-bottom: 0;   
+    
+    @media screen and(max-width: 480px) {    
+        .portfolio__item:nth-last-child(-n+3){
+            margin-bottom: 30px;    
+    }
+  }
 }
 
 .portfolio__link {
