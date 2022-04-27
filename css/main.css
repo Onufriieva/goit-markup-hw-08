@@ -40,7 +40,7 @@ ul {
 }
 
 .container {
-  min-width: 1200px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -158,6 +158,50 @@ h1, h2, h3 {
   margin: 0;
 }
 
+.nav__btn {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+}
+
+.nav__btn .nav-icon__close {
+  display: none;
+}
+
+.nav__btn .nav-icon__open {
+  display: block;
+}
+
+.nav__btn .nav__btn.is-open .nav-icon__close {
+  display: block;
+}
+
+.nav__btn .nav__btn.is-open .nav-icon__open {
+  display: none;
+}
+
+.nav__btn .nav__btn.is-open:hover .nav-icon__close,
+.nav__btn .nav__btn.is-open:focus .nav-icon__close {
+  fill: var(--button-link-color);
+}
+
+.nav__btn:hover .nav-icon__open,
+.nav__btn:focus .nav-icon__open {
+  fill: var(--button-link-color);
+}
+
+@media screen and (min-width: 767px) {
+  .nav__btn {
+    display: none;
+  }
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -245,8 +289,37 @@ h1, h2, h3 {
   justify-content: center;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    display: block;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .contacts__item {
   margin-right: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts__item {
+    margin-bottom: 32px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .contacts .contacts-item:last-child {
@@ -480,8 +553,10 @@ h1, h2, h3 {
   }
 }
 
-.peculiarities__list .peculiarities__item:last-child {
-  margin-right: 0;
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-width: 1200px) {
+  .peculiarities__item .peculiarities__list .peculiarities__item:last-child {
+    margin-right: 0;
+  }
 }
 
 .peculiarities__container {
@@ -611,7 +686,6 @@ h1, h2, h3 {
 }
 
 .team__list {
-  display: flex;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
@@ -632,6 +706,12 @@ h1, h2, h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__list {
+    display: flex;
   }
 }
 

@@ -61,12 +61,18 @@
         &:nth-last-child(-n+2){
         margin-bottom: 0;
      }
+
+     @media screen and(min-width: 1200px) {
+        .peculiarities__list .peculiarities__item:last-child {
+            margin-right: 0;
+     }
+  }
  }
 }
  
- .peculiarities__list .peculiarities__item:last-child {
-     margin-right: 0;
- }
+
+
+
  
  .peculiarities__container {
      display: flex;
