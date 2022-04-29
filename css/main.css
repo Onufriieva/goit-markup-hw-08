@@ -102,7 +102,6 @@ h1, h2, h3 {
   line-height: 1.14;
   border-bottom: 1px solid #ececec;
   background-color: var(--background-header);
-  background-color: aquamarine;
 }
 
 .container__header {
@@ -1245,6 +1244,7 @@ h1, h2, h3 {
   pointer-events: initial;
   visibility: visible;
   transition: opacity 250ms var(--сubic);
+  z-index: 10;
 }
 
 .backdrop.is-hidden {
