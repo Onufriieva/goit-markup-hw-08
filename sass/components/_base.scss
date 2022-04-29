@@ -40,8 +40,10 @@ h1,h2,h3 {
     margin-block-start: 0;
 }
 
-.photo {
+img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .list {
