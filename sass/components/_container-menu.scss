@@ -1,27 +1,31 @@
 .container__menu {    
 
     @media screen and(max-width: 767px) {
-
-
-
         display: none;
         position: absolute;
-        left: 0;
-        top: 100%;
+        right: 0;
+        top: 0;
         width: 480px;
-        width: 100%;
-        height: 100%;
+        height: 796px;
         background-color: var(--background-header);
-        background-color: red;
-
+       
         &.is-open {
             display: block;
         }
     }  
 
     @media screen and(min-width: 768px) {
-
     }
+}
+
+
+.menu__contacts {
+    padding-top: 302px;
+}
+
+.menu__item {
+    padding-bottom: 32px;
+    padding-left: 40px;
 }
 
 
@@ -30,6 +34,7 @@
     display: flex;
     align-items: center;
      margin-top: 64px;
+     padding-left: 40px;
 
      @media screen and(min-width: 768px) {
         display: none;
