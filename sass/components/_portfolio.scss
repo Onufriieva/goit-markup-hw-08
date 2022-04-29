@@ -27,8 +27,6 @@
    
    @media screen and(max-width: 767px) {
     min-width: 450px;
-    // margin-right: auto;
-    // margin-left: auto;
     margin-bottom: 30px; 
 
     &:last-child {
@@ -69,8 +67,11 @@
 
 
 .portfolio__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     text-decoration: none;    
-    display: inline-block;
+ 
     box-shadow: none;
 
     transition-property: box-shadow;

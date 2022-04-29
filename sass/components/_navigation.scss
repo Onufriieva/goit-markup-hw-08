@@ -26,8 +26,8 @@
     }
 
     
-    .nav__btn.is-active:hover .nav-icon__close,
-    .nav__btn.is-active:focus .nav-icon__close  {
+    &:hover .nav-icon__close,
+    &:focus .nav-icon__close  {
         fill: var(--button-link-color)
     }      
 
