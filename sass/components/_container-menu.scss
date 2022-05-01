@@ -1,12 +1,26 @@
 .container__menu {    
 
+    @media screen and(max-width: 480px) {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+      
+        background-color: var(--background-header);
+       
+        &.is-open {
+            display: block;
+        }
+    }  
+    
+
     @media screen and(max-width: 767px) {
         display: none;
         position: absolute;
         right: 0;
         top: 0;
-        width: 480px;
-        height: 796px;
+        width: 100%;
+       
         background-color: var(--background-header);
        
         &.is-open {
@@ -35,6 +49,7 @@
     display: flex;
     align-items: center;
      margin-top: 64px;
+     margin-bottom: 40px;
      padding-left: 40px;
 
      @media screen and(min-width: 768px) {

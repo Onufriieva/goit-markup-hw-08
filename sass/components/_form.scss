@@ -1,9 +1,15 @@
 .application {   
-    min-width: 448px;   
+    @media screen and(max-width: 479px) {
+        max-width: 370px;
+    }
 
     
-    @media screen and(max-width: 1199px) {
+    @media screen and(min-width: 480px) and(max-width: 1199px) {
         min-width: 370px;  
+      }
+
+      @media screen and(min-width: 1200px) {
+        min-width: 448px;   
       }
 }
 
@@ -34,7 +40,7 @@ margin-bottom: 12px;
 
 
 .application__input {
-    min-width: 448px;
+ 
     margin: 0;
     
     padding: 12px 15px 12px 42px;
@@ -43,9 +49,17 @@ margin-bottom: 12px;
     border-radius: 4px;
     outline: transparent;
 
-    @media screen and(max-width: 1199px) {
+    @media screen and(max-width: 479px) {
+        max-width: 370px;
+    }
+
+    @media screen and(min-width: 480px) and(max-width: 1199px) {
         min-width: 370px;  
-      }
+    }
+
+    @media screen and(min-width: 1200px) {
+        min-width: 448px;
+    }
 
 
 &:hover,
@@ -66,10 +80,18 @@ margin-bottom: 12px;
 .icon-box {
     position: relative;
     margin-bottom: 10px;
-    min-width: 448px;
+   
 
-    @media screen and(max-width: 1199px) {
+    @media screen and(max-width: 479px) {
+        max-width: 370px;
+    }
+
+    @media screen and(min-width: 480px) and(max-width: 1199px) {
         min-width: 370px;  
+      }
+
+      @media screen and(min-width: 1200px) {
+        min-width: 448px;
       }
 
 }
@@ -132,10 +154,15 @@ margin-right: 8px;
     letter-spacing: 0.03em;
     font-size: 14px;
 
+    @media screen and(max-width: 479px) {
+        display: block;
+    }
+
     @media screen and(max-width: 1199px) {
         line-height: 1.67;
         letter-spacing: 0.03em;
         font-size: 12px;
+     
       }
 
 }
@@ -170,6 +197,10 @@ margin-right: 8px;
     margin-top: 4px;
     margin-bottom: 4px;
     margin-right: 8px;
+
+    @media screen and(max-width: 479px) {
+    margin-bottom: 0;
+    }
 }
 
 .checkbox__icon {

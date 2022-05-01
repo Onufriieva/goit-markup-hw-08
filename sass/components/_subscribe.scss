@@ -27,7 +27,7 @@
 }
 
 .subscribe__field {
-    width: 358px;
+   
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -38,9 +38,19 @@
     transition-duration: 250ms;
     transition-timing-function: var(--сubic);
 
-    @media screen and(max-width: 767px) {
-      // position: relative;
-    
+    @media screen and(max-width: 479px) {
+      max-width: 358px;
+      display: block;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+
+    @media screen and(min-width: 480px) and(max-width: 767px) {
+
+    min-width: 358px;
      display: block;
      margin-bottom: 20px;
      margin-left: auto;
@@ -50,7 +60,7 @@
 
       @media screen and(min-width: 768px) and(max-width: 1199px) {
         // position: relative;
-        width: 450px;
+        min-width: 450px;
         display: block;
         margin-bottom: 20px;
         margin-left: auto;
@@ -59,7 +69,7 @@
   
 
         @media screen and(min-width: 1200px)  {
-       
+          width: 358px;
         }    
 
     &:hover,

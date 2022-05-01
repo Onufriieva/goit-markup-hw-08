@@ -34,21 +34,16 @@
     margin-top: 0;
     margin-bottom: 0;    
 
-    @media screen and(max-width: 767px) {
-        flex-wrap: wrap;  
-    }
-    
-    @media  screen and(min-width: 768px) and(max-width: 1199px){
-    
-        flex-wrap: wrap;   
-      
-    }
+    // @media screen and(max-width: 479px) {
+    //     flex-wrap: wrap;
+    //     margin: -15px;
+    //     flex-basis: calc(100% - 6 * 15px) /2;
+    // }
 
-    @media  screen and(min-width: 1200px) {
-     
-       
+    
+    @media  screen  and(max-width: 1199px){    
+        flex-wrap: wrap;         
     }
-
 }
 
 .clients__item {
@@ -58,10 +53,15 @@
     border-radius: 4px;  
 
     @media screen and(max-width: 479px) {
-        margin-bottom: 30px;
         max-width: 210px;
+        margin-bottom: 30px;
+
+
+        &:nth-child(2n) {
+            margin-right: 0;
+        }   
     }
-    
+  
 
     @media screen and(min-width: 480px) and(max-width: 767px) {
         margin-bottom: 30px;
