@@ -152,13 +152,25 @@
                 <h2 class="services__title">Чем мы занимаемся </h2>
 
                 <ul class="list services__list">
-                    <li class="services__item"><img class="photo" src="./images/img.jpg" alt="Человек за компьютером" width="370">
+                    <li class="services__item"><img class="photo" 
+                        srcset="./images/desktop/img-370.jpg 370w,
+                        ./images/desktop/img-740.jpg 740w"
+                        sizes="(min-width: 1200px) 370px"
+                        src="./images/desktop/img-370.jpg" alt="Человек за компьютером" width="370">
                     <h3 class="services__describe">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3></li>
 
-                    <li class="services__item"><img class="photo" src="./images/img(1).jpg" alt="Человек с телефоном" width="370">
+                    <li class="services__item"><img class="photo" 
+                        srcset="./images/desktop/img(1)-370.jpg 370w,
+                        ./images/desktop/img1-740.jpg 740w"
+                        sizes="(min-width: 1200px) 370px"
+                        src="./images/img(1)-370.jpg" alt="Человек с телефоном" width="370">
                     <h3 class="services__describe">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3></li>
 
-                    <li class="services__item"><img class="photo" src="./images/img(2).jpg" alt="Человек с планшетом" width="370">
+                    <li class="services__item"><img class="photo"
+                        srcset="./images/desktop/img(2)-370.jpg 370w,
+                        ./images/desktop/img2-740.jpg 740w"
+                        sizes="(min-width: 1200px) 370px"
+                         src="./images/img(2)-370.jpg" alt="Человек с планшетом" width="370">
                     <h3 class="services__describe">ДИЗАЙНЕРСКИЕ ПРИЛОЖЕНИЯ</h3></li>
                 </ul>
                         
@@ -179,8 +191,14 @@
 
                 <li class="team__item">
                     <img class="team__photo"
-                    srcset="./images/img.team.jpg 1x, ./images/img.team-540.jpg 2x"
-                    src="./images/img.team.jpg"
+                    srcset="./images/desktop/img.team-270.jpg 270w,
+                     ./images/table/img.team-354.jpg 354w, 
+                     ./images/mobile/img.team-450.jpg 450w
+                     ./images/desktop/img.team-540.jpg 540w, 
+                     ./images/table/img.team-708.jpg 708w,
+                     ./images/mobile/img.team-900.jpg 900w"
+                     sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                    src="./images/desktop/img.team-270.jpg"
                      alt="Фото мужчины" width="270" height="260">
 
                     <div class="card">
@@ -188,22 +206,30 @@
                         <p class="card__text" lang="en">Product Designer </p>
 
                         <ul class="list communication communication__connect">
-                            <li class="communication__item"><a class="communication__link team-communication__link" href="" aria-label="icon-instagram">
+                            <li class="communication__item">
+                                <a class="communication__link team-communication__link" href="" aria-label="icon-instagram" 
+                                target="_blank" rel="noopener noreferrer">
                                 <svg class="communication__icon" width="20px" height="20px">
                                 <use href="./images/symbol-defs.svg#icon-instagram"></use>
                             </svg> </a></li>
     
-                            <li class="communication__item"><a class="communication__link team-communication__link" href="" aria-label="icon-twitter">
+                            <li class="communication__item">
+                                <a class="communication__link team-communication__link" href="" aria-label="icon-twitter" 
+                                target="_blank" rel="noopener noreferrer">
                                 <svg class="communication__icon" width="20px" height="20px">
                                 <use href="./images/symbol-defs.svg#icon-twitter"></use>
                             </svg> </a></li>
     
-                            <li class="communication__item"><a class="communication__link team-communication__link" href="" aria-label="icon-facebook">
+                            <li class="communication__item">
+                                <a class="communication__link team-communication__link" href="" aria-label="icon-facebook" 
+                                target="_blank" rel="noopener noreferrer">
                                 <svg class="communication__icon" width="20px" height="20px">
                                 <use href="./images/symbol-defs.svg#icon-facebook"></use>
                             </svg> </a></li>
                             
-                            <li class="communication__item"><a class="communication__link team-communication__link" href="" aria-label="icon-linkedin">
+                            <li class="communication__item">
+                                <a class="communication__link team-communication__link" href="" aria-label="icon-linkedin" 
+                                target="_blank" rel="noopener noreferrer">
                                 <svg class="communication__icon" width="20px" height="20px">
                                 <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                             </svg> </a></li>
@@ -212,29 +238,45 @@
                 </li>
 
                 <li class="team__item"> 
-                    <img   srcset="./images/img.team-1.jpg 1x, ./images/img.team-1-540.jpg 2x"
-                     src="./images/img.team-1.jpg" class="team__photo" alt="Фото женщины" width="270" height="260">
+                    <img class="team__photo"    
+                     srcset="./images/desktop/img.team1-270.jpg 270w,
+                    ./images/table/img.team1-354.jpg 354w, 
+                    ./images/mobile/img.team1-450.jpg 450w
+                    ./images/desktop/img.team1-540.jpg 540w, 
+                    ./images/table/img.team1-708.jpg 708w,
+                    ./images/mobile/img.team1-900.jpg 900w"
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                     src="./images/desktop/img.team1-270.jpg"  
+                     alt="Фото женщины" width="270" height="260">
                     
                     <div class="card">
                         <h3 class="card__title">Ольга Репина</h3>
                         <p class="card__text" lang="en">Frontend Developer</p>
                         <ul class="list communication">
-                            <li class="communication__item"><a class="communication__link team-communication__link " href="" aria-label="icon-instagram">
+                            <li class="communication__item">
+                                <a class="communication__link team-communication__link " href="" aria-label="icon-instagram"
+                                 target="_blank" rel="noopener noreferrer">
                                 <svg class="communication__icon" width="20px" height="20px">
                                 <use href="./images/symbol-defs.svg#icon-instagram"></use>
                             </svg> </a></li>
     
-                            <li class="communication__item"><a class="communication__link team-communication__link " href="" aria-label="icon-twitter">
+                            <li class="communication__item">
+                                <a class="communication__link team-communication__link " href="" aria-label="icon-twitter"
+                                 target="_blank" rel="noopener noreferrer">
                                 <svg class="communication__icon" width="20px" height="20px">
                                 <use href="./images/symbol-defs.svg#icon-twitter"></use>
                             </svg> </a></li>
     
-                            <li class="communication__item"><a class="communication__link team-communication__link " href="" aria-label="icon-facebook">
+                            <li class="communication__item">
+                                <a class="communication__link team-communication__link " href="" aria-label="icon-facebook"
+                                 target="_blank" rel="noopener noreferrer">
                                 <svg class="communication__icon" width="20px" height="20px">
                                 <use href="./images/symbol-defs.svg#icon-facebook"></use>
                             </svg> </a></li>
                             
-                            <li class="communication__item"><a class="communication__link team-communication__link " href="" aria-label="icon-linkedin">
+                            <li class="communication__item">
+                                <a class="communication__link team-communication__link " href="" aria-label="icon-linkedin"
+                                 target="_blank" rel="noopener noreferrer">
                                 <svg class="communication__icon" width="20px" height="20px">
                                 <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                             </svg> </a></li>
@@ -243,29 +285,44 @@
                 </li>
 
                 <li class="team__item"> 
-                    <img   srcset="./images/img.team-2.jpg 1x, ./images/img.team-2-540.jpg 2x" 
-                    src="./images/img.team-2.jpg" class="team__photo" alt="фото мужчины" width="270" height="260">
+                    <img class="team__photo"  
+                    srcset="./images/desktop/img.team2-270.jpg 270w,
+                    ./images/table/img.team2-354.jpg 354w, 
+                    ./images/mobile/img.team2-450.jpg 450w
+                    ./images/desktop/img.team2-540.jpg 540w, 
+                    ./images/table/img.team2-708.jpg 708w,
+                    ./images/mobile/img.team2-900.jpg 900w"
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                    src="./images/desktop/img.team2-270.jpg"  alt="фото мужчины" width="270" height="260">
 
                     <div class="card">
                         <h3 class="card__title">Николай Тарасов</h3>
                         <p class="card__text" lang="en">Marketing</p>
                         <ul class="list communication">
-                            <li class="communication__item"><a class="communication__link team-communication__link " href="" aria-label="icon-instagram">
+                            <li class="communication__item">
+                                <a class="communication__link team-communication__link " href="" aria-label="icon-instagram"
+                                 target="_blank" rel="noopener noreferrer">
                                 <svg class="communication__icon" width="20px" height="20px">
                                 <use href="./images/symbol-defs.svg#icon-instagram"></use>
                             </svg> </a></li>
     
-                            <li class="communication__item"><a class="communication__link team-communication__link " href="" aria-label="icon-twitter">
+                            <li class="communication__item">
+                                <a class="communication__link team-communication__link " href="" aria-label="icon-twitter"
+                                 target="_blank" rel="noopener noreferrer">
                                 <svg class="communication__icon" width="20px" height="20px">
                                 <use href="./images/symbol-defs.svg#icon-twitter"></use>
                             </svg> </a></li>
     
-                            <li class="communication__item"><a class="communication__link team-communication__link " href="" aria-label="icon-facebook">
+                            <li class="communication__item">
+                                <a class="communication__link team-communication__link " href="" aria-label="icon-facebook"
+                                 target="_blank" rel="noopener noreferrer">
                                 <svg class="communication__icon" width="20px" height="20px">
                                 <use href="./images/symbol-defs.svg#icon-facebook"></use>
                             </svg> </a></li>
                             
-                            <li class="communication__item"><a class="communication__link team-communication__link " href="" aria-label="icon-linkedin">
+                            <li class="communication__item">
+                                <a class="communication__link team-communication__link " href="" aria-label="icon-linkedin"
+                                 target="_blank" rel="noopener noreferrer">
                                 <svg class="communication__icon" width="20px" height="20px">
                                 <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                             </svg> </a></li>
@@ -274,36 +331,50 @@
                 </li>
 
                 <li class="team__item">
-                    <img   srcset="./images/img.team-3.jpg 1x, ./images/img.team-3-540.jpg 2x"
-                     src="./images/img.team-3.jpg" class="team__photo" alt="Фото мужчины" width="270" height="260">
+                    <img   
+                     srcset="./images/desktop/img.team3-270.jpg 270w,
+                    ./images/table/img.team3-354.jpg 354w, 
+                    ./images/mobile/img.team3-450.jpg 450w
+                    ./images/desktop/img.team3-540.jpg 540w, 
+                    ./images/table/img.team3-708.jpg 708w,
+                    ./images/mobile/img.team3-900.jpg 900w"
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                     src="./images/desktop/img.team3-270.jpg" class="team__photo" alt="Фото мужчины" width="270" height="260">
 
                     <div class="card">
                         <h3 class="card__title">Михаил Ермаков</h3>
                         <p class="card__text" lang="en">UI Designer</p>
                         <ul class="list communication">
-                            <li class="communication__item"><a class="communication__link team-communication__link " href="" aria-label="icon-instagram">
+                            <li class="communication__item">
+                                <a class="communication__link team-communication__link " href="" aria-label="icon-instagram"
+                                 target="_blank" rel="noopener noreferrer">
                                 <svg class="communication__icon" width="20px" height="20px">
                                 <use href="./images/symbol-defs.svg#icon-instagram"></use>
                             </svg> </a></li>
     
-                            <li class="communication__item"><a class="communication__link team-communication__link " href="" aria-label="icon-twitter">
+                            <li class="communication__item">
+                                <a class="communication__link team-communication__link " href="" aria-label="icon-twitter"
+                                 target="_blank" rel="noopener noreferrer">
                                 <svg class="communication__icon" width="20px" height="20px">
                                 <use href="./images/symbol-defs.svg#icon-twitter"></use>
                             </svg> </a></li>
     
-                            <li class="communication__item"><a class="communication__link team-communication__link " href="" aria-label="icon-facebook">
+                            <li class="communication__item">
+                                <a class="communication__link team-communication__link " href="" aria-label="icon-facebook"
+                                 target="_blank" rel="noopener noreferrer">
                                 <svg class="communication__icon" width="20px" height="20px">
                                 <use href="./images/symbol-defs.svg#icon-facebook"></use>
                             </svg> </a></li>
                             
-                            <li class="communication__item"><a class="communication__link team-communication__link " href="" aria-label="icon-linkedin">
+                            <li class="communication__item">
+                                <a class="communication__link team-communication__link " href="" aria-label="icon-linkedin"
+                                 target="_blank" rel="noopener noreferrer">
                                 <svg class="communication__icon" width="20px" height="20px">
                                 <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                             </svg> </a></li>
                             </ul>
                     </div>
                     </li>
-
             </ul>
 
           </div>          
@@ -546,16 +617,20 @@
           
           <ul class="list mobile">
             <li class="mobile__item">
-                <a class="link mobile__link" href="" target="_blank">Instagram</a>
+                <a class="link mobile__link" href="" aria-label="icon-instagram"
+                 target="_blank" rel="noopener noreferrer">Instagram</a>
             </li>
             <li class="link mobile__item">
-                <a class="mobile__link" href="" target="_blank">Twitter</a>
+                <a class="mobile__link" href="" aria-label="icon-twitter" 
+                 target="_blank" rel="noopener noreferrer">Twitter</a>
             </li>
             <li class="link mobile__item">
-                <a class="mobile__link" href="" target="_blank">Facebook</a>
+                <a class="mobile__link" href="" aria-label="icon-facebook"
+                 target="_blank" rel="noopener noreferrer">Facebook</a>
             </li>
             <li class="link mobile__item">
-                <a class="mobile__link" href="" target="_blank">Linkedin</a>
+                <a class="mobile__link" href="" aria-label="icon-linkedin" 
+                 target="_blank" rel="noopener noreferrer">Linkedin</a>
             </li>
         </ul> 
 

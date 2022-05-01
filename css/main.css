@@ -424,15 +424,44 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--background-footer);
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img.background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero .box {
-    background-image: url("../images/img.background-2x.jpg");
+@media screen and (max-width: 767px) {
+  .hero {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/img.header-480.jpg");
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/img.header-960.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/table/img.header-768.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/table/img.header-1536.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/img.header-1600.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/img.header-3200.jpg");
   }
 }
 
@@ -902,6 +931,14 @@ img {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 479px) {
+  .clients__list {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1831,6 +1868,10 @@ input[type="checkbox"] {
   .thumb__basis {
     max-width: 370px;
   }
+}
+
+.container__menu {
+  position: fixed;
 }
 
 @media screen and (max-width: 480px) {
