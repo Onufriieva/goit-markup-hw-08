@@ -106,8 +106,8 @@ padding: 32px 0;
 
 .nav__link {
     display: block;
-   
-  
+   padding-top: 32px;
+  padding-bottom: 32px;
     color: var(--title-font);
     letter-spacing: 0.02em;
     text-decoration: none;
@@ -118,6 +118,7 @@ padding: 32px 0;
 
     @media screen and(max-width: 767px) {
         padding-top: 0;
+        padding-bottom: 0;
      
     }
 
