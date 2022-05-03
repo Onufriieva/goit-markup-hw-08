@@ -30,23 +30,22 @@
     padding: 48px 40px;
    
 
-    @media screen and(max-width: 480px) {
-        position: absolute;
-        position: fixed;
-        right: 0;
-        top: 0;
-        width: 100%;
-        // height: auto;
+    // @media screen and(max-width: 480px) {
+    //     position: absolute;
+    //     position: fixed;
+    //     right: 0;
+    //     top: 0;
+    //     width: 100%;
+    //     // height: auto;
       
-        background-color: var(--background-header);
-        background-color: aquamarine;
+    //     background-color: var(--background-header);
+    //     background-color: aquamarine;
        
-    }  
+    // }  
     
 
     @media screen and(max-width: 767px) {
         display: none;
-        // position: absolute;
         position: fixed;
         right: 0;
         top: 0;

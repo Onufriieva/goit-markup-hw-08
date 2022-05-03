@@ -88,6 +88,10 @@
 &:focus .close__icon {
     fill: var(--button-link-color);
  }
+
+ @media screen and(min-width: 320px) and(max-width: 479px) {
+   top: 18px;
+}
 }
 
 
