@@ -71,7 +71,7 @@
 
 
     @media screen and(max-width: 767px) {
-//    min-width: 450px;
+//  min-width: 450px;
    margin-right: auto;
    margin-left: auto;
    margin-bottom: 30px;
@@ -96,9 +96,13 @@
 }
 
 .team__photo {
-// @media screen and(max-width: 479px) {
-//    max-width: 450px;
-// }
+
+@media screen and(max-width: 479px) {
+   max-width: 450px;
+   margin-right: auto;
+   margin-left: auto;
+
+}
 
 @media screen and(min-width: 480px) and(max-width: 767px) {
     min-width: 450px;

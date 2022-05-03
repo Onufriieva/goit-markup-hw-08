@@ -173,6 +173,14 @@ img {
   z-index: 1;
 }
 
+.nav__btn.is-active .nav__icon {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
 .nav__btn .nav-icon__close {
   display: none;
 }
@@ -243,11 +251,17 @@ img {
   line-height: 1.18;
   letter-spacing: 0.02em;
   text-align: left;
+  padding: 32px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__item-menu {
+    padding-top: 0;
+  }
 }
 
 .nav__link {
   display: block;
-  padding: 32px 0;
   color: var(--title-font);
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -259,7 +273,6 @@ img {
 @media screen and (max-width: 767px) {
   .nav__link {
     padding-top: 0;
-    padding-left: 40px;
   }
 }
 
@@ -278,9 +291,6 @@ img {
 
 @media screen and (max-width: 767px) {
   .link-current {
-    margin-bottom: 35px;
-    margin-top: 48px;
-    margin-left: 40px;
     padding: 0;
   }
 }
@@ -391,7 +401,15 @@ img {
   transition-timing-function: var(--сubic);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  .contacts__tel {
+    font-size: 24px;
+    line-height: 1.17;
+    color: var(--button-link-color);
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .contacts__tel {
     font-size: 34px;
     line-height: 1.17;
@@ -798,6 +816,14 @@ img {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .team__photo {
+    max-width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .team__photo {
     min-width: 450px;
@@ -933,12 +959,6 @@ img {
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
-}
-
-@media screen and (max-width: 479px) {
-  .clients__list {
-    flex-wrap: wrap;
-  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1723,7 +1743,7 @@ input[type="checkbox"] {
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .portfolio__item {
-    min-width: 450px;
+    max-width: 450px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1871,29 +1891,33 @@ input[type="checkbox"] {
 
 .container__menu {
   position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 48px 40px;
 }
 
 @media screen and (max-width: 480px) {
   .container__menu {
     position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     width: 100%;
     background-color: var(--background-header);
-  }
-  .container__menu.is-open {
-    display: block;
+    background-color: aquamarine;
   }
 }
 
 @media screen and (max-width: 767px) {
   .container__menu {
     display: none;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     width: 100%;
+    height: 100%;
     background-color: var(--background-header);
+    background-color: aquamarine;
   }
   .container__menu.is-open {
     display: block;
@@ -1906,21 +1930,20 @@ input[type="checkbox"] {
   }
 }
 
-.menu__contacts {
-  padding-top: 302px;
+.menu__item {
+  padding-top: 100px;
+  padding-bottom: 32px;
 }
 
-.menu__item {
-  padding-bottom: 32px;
-  padding-left: 40px;
+.menu__item:last-child {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .mobile {
   display: flex;
   align-items: center;
   margin-top: 64px;
-  margin-bottom: 40px;
-  padding-left: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1951,5 +1974,11 @@ input[type="checkbox"] {
   line-height: 1.22;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+
+@media screen and (max-width: 479px) {
+  .mobile__link {
+    font-size: 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
