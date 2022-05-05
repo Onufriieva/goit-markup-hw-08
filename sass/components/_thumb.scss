@@ -3,6 +3,10 @@
     overflow: hidden;  
 }
 
+.thumb__photo {
+    width: 450px;
+}
+
 
 .thumb__title {
     margin-bottom: 4px;
@@ -43,10 +47,10 @@
     transition-duration: 250ms;
     transition-timing-function: var(--сubic);
 
-    @media screen and(min-width: 320px) {
-     padding: 30px 24px;
-     font-size: 14px;
-    }
+    // @media screen and(min-width: 320px) {
+    //  padding: 30px 24px;
+    //  font-size: 14px;
+    // }
 
     @media screen and(min-width: 480px) {
         padding: 77px 24px;
@@ -55,8 +59,8 @@
 
     
     @media screen and(min-width: 768px) {
-        padding: 49px 24px 49px 24px;
-        font-size: 18px;
+        padding: 40px 24px 49px 24px;
+        font-size: 17px;
     }
 
     
