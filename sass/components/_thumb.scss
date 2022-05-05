@@ -44,21 +44,25 @@
     transition-timing-function: var(--сubic);
 
     @media screen and(min-width: 320px) {
-     padding: 77px 24px;
+     padding: 30px 24px;
+     font-size: 14px;
     }
 
     @media screen and(min-width: 480px) {
         padding: 77px 24px;
+        font-size: 18px;
     }
 
     
     @media screen and(min-width: 768px) {
-        padding: 49px 24px 77px 24px;
+        padding: 49px 24px 49px 24px;
+        font-size: 18px;
     }
 
     
     @media screen and(min-width: 1200px) {
         padding: 63px 24px;
+        font-size: 18px;
     }
 }
 

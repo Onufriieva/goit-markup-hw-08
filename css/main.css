@@ -1761,7 +1761,7 @@ input[type="checkbox"] {
 
 @media screen and (max-width: 479px) {
   .portfolio__item {
-    max-width: 450px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1769,7 +1769,7 @@ input[type="checkbox"] {
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .portfolio__item {
-    max-width: 450px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1872,25 +1872,29 @@ input[type="checkbox"] {
 
 @media screen and (min-width: 320px) {
   .thumb__description {
-    padding: 77px 24px;
+    padding: 30px 24px;
+    font-size: 14px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .thumb__description {
     padding: 77px 24px;
+    font-size: 18px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .thumb__description {
-    padding: 49px 24px 77px 24px;
+    padding: 49px 24px 49px 24px;
+    font-size: 18px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .thumb__description {
     padding: 63px 24px;
+    font-size: 18px;
   }
 }
 
