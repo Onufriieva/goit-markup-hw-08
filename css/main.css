@@ -1860,6 +1860,13 @@ input[type="checkbox"] {
   transition-timing-function: var(--сubic);
 }
 
+@media screen and (min-width: 320px) {
+  .thumb__description {
+    padding: 30px 24px;
+    font-size: 14px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .thumb__description {
     padding: 77px 24px;
